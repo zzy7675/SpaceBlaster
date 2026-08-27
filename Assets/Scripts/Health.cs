@@ -62,4 +62,9 @@ public class Health : MonoBehaviour
         }
 
     }
+
+    public int GetHealth()
+    {
+        return health;
+    }
 }
