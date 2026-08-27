@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12a34c0315e7dfc409c3bd620a4fac00, type: 3}
-  m_Name: Wave (0)
+  m_Name: Wave (1)
   m_EditorClassIdentifier: Assembly-CSharp::WaveConfigSO
   enemyPrefabs:
   - {fileID: 5324816778074940812, guid: 9d62d8a84e42d604e8b00737e763349d, type: 3}
   - {fileID: 5324816778074940812, guid: 9d62d8a84e42d604e8b00737e763349d, type: 3}
   - {fileID: 5324816778074940812, guid: 9d62d8a84e42d604e8b00737e763349d, type: 3}
-  pathPrefab: {fileID: 420865826054510090, guid: a0849381b0e13b246a373bbbb07378e9, type: 3}
-  enemyMoveSpeed: 5
+  - {fileID: 5324816778074940812, guid: 9d62d8a84e42d604e8b00737e763349d, type: 3}
+  pathPrefab: {fileID: 420865826054510090, guid: 767807f4cc9dc144395238d528401849, type: 3}
+  enemyMoveSpeed: 3
   timeBetweenEnemySpawns: 1
   enemySpawnVariance: 0.2
   minimumSpawnTime: 0.2
