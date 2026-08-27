@@ -16,9 +16,11 @@ public class Shooter : MonoBehaviour
 
     [HideInInspector] public bool isFiring;
     Coroutine fireCoroutine;
+    AudioManager audioManager;
 
     void Start()
     {
+        audioManager = FindFirstObjectByType<AudioManager>();
         if (useAI)
         {
             isFiring = true;
@@ -50,6 +52,7 @@ public class Shooter : MonoBehaviour
             Rigidbody2D projectileRigidBody = projectile.GetComponent<Rigidbody2D>();
             projectileRigidBody.linearVelocity = transform.up * projectileSpeed;
             Destroy(projectile, projectileLifeTime);
+            audioManager.PlayShootingSFX();
             yield return new WaitForSeconds(GetRandomFireRate());
         }
     }
