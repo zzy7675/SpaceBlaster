@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: -3832575758080304626}
   - component: {fileID: 5018385838000586960}
   - component: {fileID: 6657255896088094467}
+  - component: {fileID: 2508289537306267374}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -215,8 +216,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26dae27806ede6445aeacb371db4b10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shooter
-  projectilePrefab: {fileID: 0}
-  projectileSpeed: 5
+  projectilePrefab: {fileID: 2942759251823341854, guid: 21e3da89eb235ce40b1e71e9ada3ff59, type: 3}
+  projectileSpeed: 15
   projectileLifeTime: 5
-  fireRate: 0.2
+  baseFireRate: 0.2
+  minimumFireRate: 0.2
+  fireRateVariance: 0
+  useAI: 0
   isFiring: 0
+--- !u!114 &2508289537306267374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4465387126701161812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730e725c3e2aae649818131685a09472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  moveSpeed: 20
+  leftBoundPadding: 1
+  rightBoundPadding: 1
+  topBoundPadding: 7
+  botBoundPadding: 1

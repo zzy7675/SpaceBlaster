@@ -3,14 +3,27 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
+    [Header("Base Variables")]
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float projectileSpeed = 5f;
     [SerializeField] float projectileLifeTime = 5f;
-    [SerializeField] float fireRate = 0.2f;
+    [SerializeField] float baseFireRate = 0.2f;
 
-    public bool isFiring;
+    [Header("AI Variables")]
+    [SerializeField] float minimumFireRate = 0.2f;
+    [SerializeField] float fireRateVariance = 0f;
+    [SerializeField] bool useAI;
+
+    [HideInInspector] public bool isFiring;
     Coroutine fireCoroutine;
 
+    void Start()
+    {
+        if (useAI)
+        {
+            isFiring = true;
+        }
+    }
     void Update()
     {
         Fire();
@@ -33,10 +46,17 @@ public class Shooter : MonoBehaviour
         while (true)
         {
             GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            projectile.transform.rotation = transform.rotation;
             Rigidbody2D projectileRigidBody = projectile.GetComponent<Rigidbody2D>();
-            projectileRigidBody.linearVelocityY = projectileSpeed;
+            projectileRigidBody.linearVelocity = transform.up * projectileSpeed;
             Destroy(projectile, projectileLifeTime);
-            yield return new WaitForSeconds(fireRate);
+            yield return new WaitForSeconds(GetRandomFireRate());
         }
+    }
+
+    float GetRandomFireRate()
+    {
+        float randomFireRate = Random.Range(baseFireRate - fireRateVariance, baseFireRate + fireRateVariance);
+        return Mathf.Clamp(randomFireRate, minimumFireRate, float.MaxValue);
     }
 }
