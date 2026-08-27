@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 192687843}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2043243710}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &192687843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1534,7 +1546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1823805812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2043243710}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1823805812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1652,6 +1676,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2043243709
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 174.24483
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 416.69833
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752669174948412584, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5787394071556645934, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+--- !u!114 &2043243710 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7783731941653394380, guid: a3fca4eb7bd12564190909e8d4f84668, type: 3}
+  m_PrefabInstance: {fileID: 2043243709}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ca341856e4f2b4aa1f40e5c96b721f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1661,3 +1753,4 @@ SceneRoots:
   - {fileID: 1013195700}
   - {fileID: 1390661218}
   - {fileID: 2016047788}
+  - {fileID: 2043243709}
