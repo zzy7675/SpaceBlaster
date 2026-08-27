@@ -204,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   health: 50
+  hitParticles: {fileID: 8917210854148209834, guid: 9228f9e9d43a9464abce3d5d3c700e74, type: 3}
 --- !u!114 &6657255896088094467
 MonoBehaviour:
   m_ObjectHideFlags: 0
