@@ -3,9 +3,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
+    ScoreKeeper scoreKeeper;
+
+    void Awake()
+    {
+        scoreKeeper = FindFirstObjectByType<ScoreKeeper>();
+    }
     public void LoadGame()
     {
         SceneManager.LoadScene("GameScene");
+        scoreKeeper.ResetScore();
     }
 
     public void LoadGameOver()
@@ -20,7 +27,7 @@ public class LevelManager : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quiting game...");
+        // Debug.Log("Quiting game...");
         Application.Quit();
     }
 

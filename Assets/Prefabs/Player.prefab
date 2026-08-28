@@ -244,4 +244,4 @@ MonoBehaviour:
   leftBoundPadding: 1
   rightBoundPadding: 1
   topBoundPadding: 7
-  botBoundPadding: 1
+  botBoundPadding: 2

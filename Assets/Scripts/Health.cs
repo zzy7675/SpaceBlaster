@@ -53,7 +53,6 @@ public class Health : MonoBehaviour
         } else
         {
             scoreKeeper.AddScore(scoreValue);
-            print(scoreKeeper.GetCurrentScore());
         }
         Destroy(gameObject);
     }
