@@ -9,7 +9,7 @@ public class UIGameOver : MonoBehaviour
 
     void Awake()
     {
-        scoreKeeper = FindAnyObjectByType<ScoreKeeper>();
+        scoreKeeper = FindFirstObjectByType<ScoreKeeper>();
     }
 
     void Start()

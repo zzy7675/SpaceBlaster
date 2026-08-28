@@ -736,6 +736,7 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: 8c05c3e32f8385440838c8dca7449c9d, type: 2}
   - {fileID: 11400000, guid: ac402a6df2154ba44b507ba086bbbc13, type: 2}
+  - {fileID: 11400000, guid: 1330d48d74889c242a567a1092b5bbaa, type: 2}
   timeBetweenWaves: 1
   isLooping: 1
 --- !u!4 &1207172989
@@ -1310,11 +1311,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 478729917028923577, guid: ecd69c81f082d4d459665bd0a24dac75, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.39438
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 478729917028923577, guid: ecd69c81f082d4d459665bd0a24dac75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.25924
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 478729917028923577, guid: ecd69c81f082d4d459665bd0a24dac75, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1365,6 +1366,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2508289537306267374, guid: 1d7cff97656c282439ff8d0d3cff69da, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4324737541554875265, guid: 1d7cff97656c282439ff8d0d3cff69da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1408,6 +1413,22 @@ PrefabInstance:
     - target: {fileID: 4465387126701161812, guid: 1d7cff97656c282439ff8d0d3cff69da, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657255896088094467, guid: 1d7cff97656c282439ff8d0d3cff69da, type: 3}
+      propertyPath: baseFireRate
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657255896088094467, guid: 1d7cff97656c282439ff8d0d3cff69da, type: 3}
+      propertyPath: minimumFireRate
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657255896088094467, guid: 1d7cff97656c282439ff8d0d3cff69da, type: 3}
+      propertyPath: projectileSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657255896088094467, guid: 1d7cff97656c282439ff8d0d3cff69da, type: 3}
+      propertyPath: fireRateVariance
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
